@@ -44,6 +44,10 @@ app.get('/about',(req,res)=>{
   res.render('about.hbs',{pageTitle:'About Page'});
 });
 
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{pageTitle:'Projects Page', projectMessage:'Portifolio page here!'});
+});
+
 app.get('/bad',(req,res)=>{
   res.send({message:'Error handeling request'});
 });
